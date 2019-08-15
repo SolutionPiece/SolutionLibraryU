@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bakground_shadow"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/ic_launcher"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:paddingTop="20sp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:gravity="center|start"
+                android:textColor="@color/dark_gray"
+                android:text="Football Master Wallpaper"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/txt_etitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:textColor="@color/dark_gray"
+                android:text="Thanks for using our app"
+                android:paddingLeft="10dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@android:color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt_ekktitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:visibility="visible"
+                android:text="An updated version is available, for a better performance please update the app.. stay happy.."
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/layout_btn_later"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/btnMayBeLater"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Close App"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/rounded_update_btn"
+                            android:textColor="@android:color/white"
+                            android:layout_height="match_parent" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/btnRateNow"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Update Now"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/rounded_update_btn"
+                            android:textColor="@android:color/white"
+                            android:layout_height="match_parent" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

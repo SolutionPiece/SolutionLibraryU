@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#22cde7</color>
+    <color name="colorPrimaryDark">#15aec5</color>
+    <color name="colorAccent">#F44336</color>
+
+    <color name="buttonClickedHaveDark">#EF6C00</color>
+    <color name="buttonClickedLightDark">#ff7400</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="black">#000</color>
+
+    <color name="color_orange">#EF6C00</color>
+    <color name="color_blue">#2196F3</color>
+    <color name="color_green">#009688</color>
+    <color name="color_dark_blue">#0A608A</color>
+    <color name="color_red">#DD2C00</color>
+
+
+
+    <color name="gray">#969192</color>
+    <color name="transparent">#b0000000</color>
+    <color name="White">#ffffff</color>
+    <color name="SecondDark2">#20A57D</color>
+    <color name="ThirdDark3">#1B7F61</color>
+
+    <color name="colorDark">#343a40</color>
+
+    <color name="lightbluecolour">#99ccff</color>
+    <color name="darkbluecolour">#3399cc</color>
+    <color name="whitecolor">#fff</color>
+
+    //=========================//
+    <color name="buton_click_color">#3399cc</color>
+    <color name="buton_click_color_other">#87b0dd</color>
+    //==================////
+
+    <color name="fact_color">#E56133</color>
+    <color name="fact_color_other">#C37E66</color>
+    //==============//
+
+    <color name="sumpthos_color">#8E30E7</color>
+    <color name="sumpthos_color_other">#A48BBC</color>
+
+
+    <color name="treatment_color">#A6BD19</color>
+    <color name="treatment_color_other">#AAB277</color>
+
+    <color name="gray1">#EEEEEE</color>
+    <color name="gray2">#E0E0E0</color>
+    <color name="gray3">#BDBDBD</color>
+    <color name="gray4">#9E9E9E</color>
+
+
+    <color name="dark_gray">#34495e</color>
+
+</resources>

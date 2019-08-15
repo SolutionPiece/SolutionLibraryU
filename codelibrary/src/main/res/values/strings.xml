@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+
+    <integer name="backpress_count">100</integer>
+
+    <string name="color_status_master">#15aec5</string>
+    <string name="color_orange">#EF6C00</string>
+    <string name="color_blue">#2196F3</string>
+    <string name="color_green">#009688</string>
+    <string name="color_dark_blue">#0A608A</string>
+    <string name="color_red">#DD2C00</string>
+    <string name="color_white">#fff</string>
+
+
+</resources>
