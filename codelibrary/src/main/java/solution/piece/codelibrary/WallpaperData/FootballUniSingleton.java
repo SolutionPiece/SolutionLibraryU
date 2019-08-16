@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import solution.piece.codelibrary.ModalClass.ModalClub;
+import solution.piece.codelibrary.ModalClass.ModalFavourite;
+import solution.piece.codelibrary.ModalClass.ModalPopular;
 
 public class FootballUniSingleton {
 
@@ -16,9 +18,9 @@ public class FootballUniSingleton {
     public static Drawable drawable;
 
     //TODO
-  //  public static List<ModalPopular> popular_image_list = new ArrayList<>();
-  //  public static List<ModalFavourite> listFavourite = new ArrayList<>();
-  //  public static List<ModalClub> club_image_list = new ArrayList<>();
+    public static List<ModalPopular> popular_image_list = new ArrayList<>();
+    public static List<ModalFavourite> listFavourite = new ArrayList<>();
+    public static List<ModalClub> club_image_list = new ArrayList<>();
 
     public static ArrayList<String> listImages = new ArrayList<>();
 
