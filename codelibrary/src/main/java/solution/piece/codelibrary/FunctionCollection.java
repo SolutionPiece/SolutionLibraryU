@@ -174,7 +174,7 @@ public class FunctionCollection {
         editor.commit();
     }
 
-    public void RateUsApp() {
+    public void RateUsApp(Context context) {
         Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
         Intent myAppLinkToMarket = new Intent(Intent.ACTION_VIEW, uri);
         try {

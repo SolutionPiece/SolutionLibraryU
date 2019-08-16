@@ -22,7 +22,7 @@ public class FootballUniSingleton {
     public static List<ModalFavourite> listFavourite = new ArrayList<>();
     public static List<ModalClub> club_image_list = new ArrayList<>();
 
-    public static ArrayList<String> listImages = new ArrayList<>();
+    public static List<String> listImages = new ArrayList<>();
 
 
     private static String DIRECTORY_TO_SAVE_MEDIA_NOW = "/Wallpaper Collection/";

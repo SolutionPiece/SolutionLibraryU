@@ -3,9 +3,9 @@ package solution.piece.codelibrary.ModalClass;
 
 import androidx.annotation.Keep;
 
-//import com.google.firebase.database.IgnoreExtraProperties;
+import com.google.firebase.database.IgnoreExtraProperties;
 
-//@IgnoreExtraProperties
+@IgnoreExtraProperties
 @Keep
 public class ModalPopular {
 

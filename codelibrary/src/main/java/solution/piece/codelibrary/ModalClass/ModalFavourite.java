@@ -4,9 +4,9 @@ import android.graphics.drawable.Drawable;
 
 import androidx.annotation.Keep;
 
-//import com.google.firebase.database.IgnoreExtraProperties;
+import com.google.firebase.database.IgnoreExtraProperties;
 
-//@IgnoreExtraProperties
+@IgnoreExtraProperties
 @Keep
 public class ModalFavourite {
 
