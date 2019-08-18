@@ -44,7 +44,7 @@ public class ContactActivity extends Activity {
 
             if (message.length() < 20)
             {
-                FunctionCollection.DisplayCustomizeToast(this, "Miniumum 20 character message required to send mail... Thanks",0,7,true);
+                FunctionCollection.DisplayCustomizeToast(this, "Miniumum 20 character message required to send mail... Thanks",0,6,true);
                 txtMessage.requestFocus();
                 return;
             }
@@ -56,7 +56,7 @@ public class ContactActivity extends Activity {
         }
         else
         {
-            FunctionCollection.DisplayCustomizeToast(ContactActivity.this, "Sorry Internet Unavailable....",0,7,true);
+            FunctionCollection.DisplayCustomizeToast(ContactActivity.this, "Sorry Internet Unavailable....",0,6,true);
             return;
         }
     }

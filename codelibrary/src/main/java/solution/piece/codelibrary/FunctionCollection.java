@@ -35,6 +35,7 @@ import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import solution.piece.codelibrary.WallpaperData.StatusMasterSingleton;
@@ -70,7 +71,7 @@ public class FunctionCollection {
                 image.recycle();
                 image = null;
             } else {
-                DisplayCustomizeToast(context2, "Failed to set wallpaper",0,7,true);
+                DisplayCustomizeToast(context2, "Failed to set wallpaper",0,6,true);
             }
         } catch (IOException e) {
 
@@ -153,6 +154,44 @@ public class FunctionCollection {
         }
     }
 
+    public void CityCurrentDate_Save()
+    {
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        String currentDate = formatter.format(c.getTime());
+        SharePrefSaveValue("DailyGift", currentDate);
+
+        String saveDate = SharePrefGetValue("DailyGift","5");
+        Log.d("ServiceProcess33", "RequestDate saveDate after changes" + saveDate);
+    }
+
+
+    public boolean CurrentDate_Check()
+    {
+        boolean isTrue = false;
+        try {
+            Calendar c = Calendar.getInstance();
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+            String currentDate = formatter.format(c.getTime());
+
+            String saveDate = SharePrefGetValue("DailyGift","5");
+            Log.d("ServiceProcess33", currentDate+" = " + saveDate);
+
+            if (!currentDate.matches(saveDate)) {
+                isTrue = true;
+            }
+            else
+            {
+                isTrue = false;
+            }
+
+        }
+        catch (Exception ex)
+        {
+            DisplayCustomizeToast(context,"Date Error : "+ex.toString(),0,6,true);
+        }
+        return isTrue;
+    }
 
     public String DateDBUpdateGet(){
         SharedPreferences prefs  = context.getSharedPreferences("CurrentDate", Context.MODE_PRIVATE);
@@ -343,60 +382,7 @@ public class FunctionCollection {
         }
     }
 
-   /* public void DeleteFileFunction(final String resource_urls, final String from)
-    {
-        int unicode = 0x1f612;
-        String emoji  = getEmojiByUnicode(unicode);
-        String message = "Are you surly want to delete this file!";
 
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
-        alertDialogBuilder.setMessage(message);
-        alertDialogBuilder.setNegativeButton("Cancel",new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        }).setPositiveButton("Delete",new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                try {
-                    File file = new File(resource_urls);
-                    boolean deleted = file.delete();
-                    if(deleted)
-                    {
-                        if(from.matches("images"))
-                        {
-                            FragmentImages.onCreateFunction(context);
-
-                        }
-                        if(from.matches("videos"))
-                        {
-                            VideoActivity.VideoActivityFinish(context);
-                            FragmentVideo.onCreateFunction(context);
-
-                        }
-                        if(from.matches("audio"))
-                        {
-                            AudioActivity.AudioActivityFinish(context);
-                            FragmentAudio.onCreateFunction(context);
-                        }
-                        FunctionCollection.ShowCustomToast(context, "File Deleted Successfully...",1,1);
-
-                    }
-                    if(!deleted){
-                        boolean deleted2 = file.getCanonicalFile().delete();
-                        if(!deleted2){
-                            boolean deleted3 = context.getApplicationContext().deleteFile(file.getName());
-                        }
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-    }*/
 
     public String getEmojiByUnicode(int unicode){
         return new String(Character.toChars(unicode));

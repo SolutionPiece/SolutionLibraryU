@@ -69,7 +69,7 @@ public class DialogUpdateAvaiable extends Activity {
         }
         else
         {
-            FunctionCollection.DisplayCustomizeToast(DialogUpdateAvaiable.this, "Sorry internet unavailable....", 0,7,true);
+            FunctionCollection.DisplayCustomizeToast(DialogUpdateAvaiable.this, "Sorry internet unavailable....", 0,6,true);
         }
     }
 
