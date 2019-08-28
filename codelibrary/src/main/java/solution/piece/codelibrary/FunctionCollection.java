@@ -356,7 +356,7 @@ public class FunctionCollection {
         try {
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setType("text/plain");
-            Uri data = Uri.parse("mailto:?subject=" + "WhatsApp Master App" + "&body=" + message + "&to=" + "solutionpieceteam@gmail.com");
+            Uri data = Uri.parse("mailto:?subject=" + context.getResources().getString(R.string.app_name) + "&body=" + message + "&to=" + "solutionpieceteam@gmail.com");
             intent.setData(data);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 

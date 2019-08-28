@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyLibrary</string>
+    <string name="app_name">Solution Piece</string>
 
     <integer name="backpress_count">100</integer>
 
@@ -10,6 +10,8 @@
     <string name="color_dark_blue">#0A608A</string>
     <string name="color_red">#DD2C00</string>
     <string name="color_white">#ffffff</string>
+
+    <string name="back_press_message">Again Backpress to Exit</string>
 
 
 </resources>
