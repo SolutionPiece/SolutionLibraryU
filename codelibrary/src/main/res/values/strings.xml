@@ -11,7 +11,7 @@
     <string name="color_red">#DD2C00</string>
     <string name="color_white">#ffffff</string>
 
-    <string name="back_press_message">Again Backpress to Exit</string>
+    <string name="back_press_message">Tap again to exit</string>
 
 
 </resources>
