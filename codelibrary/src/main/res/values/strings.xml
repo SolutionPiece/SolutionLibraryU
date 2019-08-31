@@ -3,7 +3,7 @@
 
     <integer name="backpress_count">100</integer>
 
-    <string name="color_status_master">#15aec5</string>
+    <string name="color_samsung">#15aec5</string>
     <string name="color_orange">#cb9d1c</string>
     <string name="color_blue">#2196F3</string>
     <string name="color_green">#009688</string>

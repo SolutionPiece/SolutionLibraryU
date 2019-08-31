@@ -8,21 +8,11 @@ import com.google.firebase.database.IgnoreExtraProperties;
 @Keep
 public class ApplicationModal {
 
-    String app_id;
     String update_type;
     String update_version;
     String facebook_banner_id;
     String facebook_inter_id;
-    String intertitial_id;
-    String banner_id;
 
-    public String getApp_id() {
-        return app_id;
-    }
-
-    public void setApp_id(String app_id) {
-        this.app_id = app_id;
-    }
 
     public String getUpdate_type() {
         return update_type;
@@ -56,21 +46,4 @@ public class ApplicationModal {
         this.facebook_inter_id = facebook_inter_id;
     }
 
-    public String getIntertitial_id() {
-        return intertitial_id;
-    }
-
-    public void setIntertitial_id(String intertitial_id) {
-        this.intertitial_id = intertitial_id;
-    }
-
-
-
-    public String getBanner_id() {
-        return banner_id;
-    }
-
-    public void setBanner_id(String banner_id) {
-        this.banner_id = banner_id;
-    }
 }
