@@ -273,6 +273,9 @@ public class FunctionCollection {
     public void CopyFileToDownloadFolder(Context context, String resource_url, String file_name)
     {
         try {
+
+            DisplayCustomizeToast(context, "Please wiat your file will be downloaded in a while",0,6,true);
+
             File sourceLocation= new File (resource_url);
             File targetLocation= new File (StatusMasterSingleton.getInstance(context).GetDownloadFolder()+File.separator+file_name);
 
@@ -440,6 +443,8 @@ public class FunctionCollection {
         values.put(MediaStore.Images.Media.DATA, file.getAbsolutePath());
         values.put(MediaStore.Images.Media.MIME_TYPE, "image/PNG"); // or image/png
         context.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
+        DisplayCustomizeToast(context, "File is downloaded successfully",0,6,true);
     }
 
 
